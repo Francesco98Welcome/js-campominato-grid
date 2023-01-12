@@ -28,11 +28,23 @@ main {
     background-color: aquamarine;
     height: 80vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+#difficult {
+    padding: 4px 0px;
+    text-align: center;
 }
 
 #gridContainer {
+    height: 70vh;
+    width: 80vh;
+    background-color: rgb(74, 219, 141);
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid green;
+}
+#mediumContainer {
     height: 70vh;
     width: 80vh;
     background-color: rgb(74, 219, 141);
@@ -44,27 +56,42 @@ main {
 .hidden {
     visibility: hidden;
 }
-.visibile {
-    visibility: visible;
-}
 
-#gridContainer > .box {
-    height: calc(100% / 10);
-    width: calc(100% / 10);
+.box {
     border: 2px solid green;
     display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 10);
+    height: calc(100% / 10);
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+.boxMediumContainer {
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    align-items: center;
+    justify-content: center;
+}
+.boxHardContainer {
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    align-items: center;
+    justify-content: center;
 }
 
 #gridContainer > .box.clicked {
     background-color: aquamarine;
 }
 
-footer {
+footer > h4{
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-top: 20px;
+    padding-top: 22px;
 }
